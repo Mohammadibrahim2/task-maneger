@@ -42,7 +42,7 @@ const AddTask=()=>{
                 console.log(newUpdatedata,"data update hoice")
                 setPhoto(newUpdatedata)
 
-                fetch("https://task-management-server-steel.vercel.app/task",{
+                fetch("https://task-management-server-mohammadibrahim2.vercel.app/task",{
                     method:"POST",
                     headers:{
                         "content-type":"application/json"

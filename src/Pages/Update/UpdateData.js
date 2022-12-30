@@ -23,7 +23,7 @@ const UpdateData=()=>{
     const handleUpdate=(data)=>{
         console.log(data)
         console.log(data.photo[0].name)
-        fetch(`https://task-management-server-steel.vercel.app/updatedTask/${polo._id}`,{
+        fetch(`https://task-management-server-mohammadibrahim2.vercel.app/updatedTask/${polo._id}`,{
             method:"PUT",
             headers:{
                 "content-type":"application/json"

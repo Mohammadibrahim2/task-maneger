@@ -16,7 +16,7 @@ const MyTask = () => {
     console.log(user)
 
     useEffect(() => {
-        fetch("https://task-management-server-steel.vercel.app/data")
+        fetch("https://task-management-server-mohammadibrahim2.vercel.app/data")
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -26,7 +26,7 @@ const MyTask = () => {
     }, [])
 
     const handleDelete=(id)=>{
-        fetch(`https://task-management-server-steel.vercel.app/deletetask/${id}`,{
+        fetch(`https://task-management-server-mohammadibrahim2.vercel.app/deletetask/${id}`,{
 
         method:"DELETE",
 
@@ -46,7 +46,7 @@ const MyTask = () => {
 
 
         if(id==sto._id){
-            fetch(`https://task-management-server-steel.vercel.app/completedTask/${id}`,{
+            fetch(`https://task-management-server-mohammadibrahim2.vercel.app/completedTask/${id}`,{
           
             method:"POST",
             headers:{

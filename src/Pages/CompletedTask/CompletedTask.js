@@ -10,7 +10,7 @@ const CompletedTask = () => {
     const[completedData,setCompletedData]=useState([])
 
     useEffect(()=>{
-        fetch("https://task-management-server-steel.vercel.app/completed")
+        fetch("https://task-management-server-mohammadibrahim2.vercel.app/completed")
         .then(res=>res.json())
         .then(completedAllData=>{
             console.log(completedAllData)
@@ -28,7 +28,7 @@ const CompletedTask = () => {
         const Comment=event.target.comment.value 
         console.log(subject)
        
-        fetch(`https://task-management-server-steel.vercel.app/comment/${subject}`,{
+        fetch(`https://task-management-server-mohammadibrahim2.vercel.app/comment/${subject}`,{
             method:"POST",
             headers:{
                 "content-type":"application/json"
@@ -42,7 +42,7 @@ const CompletedTask = () => {
            
 
         }))
-        fetch(`https://task-management-server-steel.vercel.app/comment/${subject}`)
+        fetch(`https://task-management-server-mohammadibrahim2.vercel.app/comment/${subject}`)
         .then(res=>res.json())
         .then(result=>{
             console.log(result)
@@ -53,7 +53,7 @@ const CompletedTask = () => {
         
     }
     const handleDelete=(id)=>{
-        fetch(`https://task-management-server-steel.vercel.app/deletetask/${id}`,{
+        fetch(`https://task-management-server-mohammadibrahim2.vercel.app/deletetask/${id}`,{
 
         method:"DELETE",
 
